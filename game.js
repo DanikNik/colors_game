@@ -1,8 +1,5 @@
 import EventBus from "./eventBus";
 
-//TODO: turns
-//TODO: win condition
-
 const chars = {
     'user1': '1',
     'user2': '2',
