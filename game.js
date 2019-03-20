@@ -1,5 +1,6 @@
 import EventBus from "./eventBus";
 
+const cellsLeftForEnd = 14;
 const chars = {
     'user1': '1',
     'user2': '2',
@@ -20,7 +21,7 @@ class GameService {
     };
 
     check(){
-        if (this.cellsCount === 12){
+        if (this.cellsCount === cellsLeftForEnd){
             console.group("Game");
             console.log(`${this.whoseTurn.name} won!!!`);
             console.groupEnd();
